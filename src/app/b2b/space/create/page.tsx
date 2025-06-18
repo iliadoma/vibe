@@ -74,7 +74,7 @@ export default function CreateSpacePage() {
     is_active: true
   });
 
-  const handleInputChange = (field: keyof SpaceFormData, value: any) => {
+  const handleInputChange = (field: keyof SpaceFormData, value: string | number | boolean) => {
     setFormData(prev => ({
       ...prev,
       [field]: value
